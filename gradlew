@@ -7,6 +7,14 @@
 ##############################################################################
 
 # Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
+
+#Install the java SDK and jre
+#sudo apt-get install default-jre
+#sudo apt-get install default-jdk
+#in case of lib breakage,ensure that sdk version is 22 and appcompat is 22.2.0
+
+export JAVA_HOME=/usr/lib/jvm/default-java
+export ANDROID_HOME=/home/$(whoami)/android_sdk
 DEFAULT_JVM_OPTS=""
 
 APP_NAME="Gradle"
